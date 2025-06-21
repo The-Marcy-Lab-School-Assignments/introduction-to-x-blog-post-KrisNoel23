@@ -19,9 +19,27 @@ Enhanced tooling - Excellent editor integration, particularly with VS Code.
 * Choosing JavaScript is like choosing a map over a gps. Sure, you will get to your destination, but it requires careful attention and self-direction. You might get lost or make a wrong turn if you're not very meticulous or careful. Whereas TypeScript on the other is a gps that provides clear directions, alerts you to potential errors (aka like going the wrong way), and helps you stay on track, making the journey safer and more efficient. This is especially helpful in unfamiliar or complex routes (aka large projects). 
 ## Core syntax/features. 
 
-* For programming languages: data types, variables, code blocks, functions, conditionals, arrays and objects, and iteration. Include code snippets with explanations.
 
-* For frameworks (including React and Express): setup/installation/configurations, core concepts, key methods or approaches. Include code snippets with explanations.
+
+````
+function greet(user) {
+  return "Hello, " + user.toUpperCase();
+}
+
+console.log(greet("Kris"));    // Works
+console.log(greet(123));       // Runtime error: user.toUpperCase is not a function
+
+
+function greet(user: string): string {
+  return "Hello, " + user.toUpperCase();
+}
+
+console.log(greet("Kris"));    // Works
+console.log(greet(123));       // Compile-time error: Argument of type 'number' is not assignable to parameter of type 'string'
+````
+
+This example proves why TypeScript is more effective because there will be early error detection - The second greet(123) call is flagged before the code runs, preventing runtime bugs.
+
 
 ## Compare and Contrast
 
@@ -34,8 +52,7 @@ Because TypeScript is a superset of JavaScript, that means that all valid JavaSc
 * There are alternatives to TypeScript! If you find that TypeScript still isn't for you by the end of this blog, there are other frameworks like Python, Rust, and Java. It all depends on your project's specific needs and preferences. Consider factors like required performance, scalability, development speed, and the team's familiarity (If you are working in a team) with the language or framework. TypeScript can be compared to JavaScript, because it has everything that JavaScript has. Some of the main tradeoffs that I've mentioned earlier on in this blog about all the benefits of TypeScript, but here also are some disadvantages to using TypeScript to JavaScript; 
 
 There tends to be a learning curve. Developers new to static typing may face an initial learning curve to understand and effectively utilize TypeScript's features, like type annotations and interfaces.
-
-
+Another disadvantage is incompatibility with libraries. While many libraries have TypeScript type definitions, some older or less popular libraries may lack them, requiring extra effort to integrate. TypeScript also is not a true replacement for JavaScript. TypeScript is a superset of JavaScript, meaning that it compiles down to plain JavaScript. It doesn't replace JavaScript entirely, but rather enhances it. 
 
 ## Conclusion & Tips for learning this language/framework.
 
@@ -44,3 +61,4 @@ There tends to be a learning curve. Developers new to static typing may face an 
 * (https://www.typescriptlang.org/docs/handbook/intro.html) 
 * (https://www.youtube.com/watch?v=BCg4U1FzODs)
 * (https://www.codecademy.com/courses/learn-typescript)
+* (https://www.contentful.com/blog/typescript-vs-javascript-explaining-the-differences/)
