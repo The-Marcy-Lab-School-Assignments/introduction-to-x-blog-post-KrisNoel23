@@ -4,7 +4,7 @@ By Kristopher Noel
 
 ## Introduction
 
-* Have you ever spent hours chasing a bug, only to find it was caused by something as small as passing the wrong kind of data into a function? Or maybe you've refactored part of your codebase and held your breath, hoping you didn’t break something in a file you forgot even existed. This is where TypeScript shines. TypeScript gives developers what JavaScript doesn't: clarity, predictability, and peace of mind. It's like having a second pair of eyes on your code—constantly checking your logic, your types, and your assumptions before they cause real problems.
+Have you ever spent hours chasing a bug, only to find it was caused by something as small as passing the wrong kind of data into a function? Or maybe you've refactored part of your codebase and held your breath, hoping you didn’t break something in a file you forgot even existed. This is where TypeScript shines. TypeScript gives developers what JavaScript doesn't: clarity, predictability, and peace of mind. It's like having a second pair of eyes on your code—constantly checking your logic, your types, and your assumptions before they cause real problems.
 
 TypeScript is a superset of JavaScript, which means that TypeScript builds on the existing syntax and features of JavaScript while also having additional features like static typing. TypeScript is designed to help developers build and maintain large-scale applications more easily and with fewer errors. TypeScript's popularity continues to grow, with a stronger demand for TypeScript developers in the job market and the rise of TypeScript being connected to an increasing industry focus on type safety and robust code in large-scale applications. Its popularity is driven by benefits like:
 
